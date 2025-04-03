@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Unicorn Dreams - Louez une licorne pour vos événements</title>
+  <title>Licornes Rent - Louez une licorne pour vos événements</title>
   <style>
     body {
       margin: 0;
       font-family: 'Comic Sans MS', cursive, sans-serif;
       background: linear-gradient(to right, #f9c5d1, #ffe1e9);
       color: #4b0082;
-      text-align: center;
+      scroll-behavior: smooth;
     }
     header {
       padding: 2rem;
       background-color: rgba(255, 255, 255, 0.7);
+      text-align: center;
     }
     h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
     }
-    p.tagline {
-      font-size: 1.5rem;
-      font-style: italic;
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #ffb6c1;
+      padding: 1rem;
     }
-    .hero {
-      margin: 3rem auto;
+    nav a {
+      color: #4b0082;
+      text-decoration: none;
+      font-weight: bold;
     }
-    .hero img {
-      max-width: 300px;
-      border-radius: 50%;
-      box-shadow: 0 0 30px white;
-    }
-    .cta {
+    section {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
       margin-top: 2rem;
     }
     .cta a {
@@ -44,29 +50,78 @@
       border-radius: 30px;
       box-shadow: 0 0 15px #ff69b4;
     }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    form button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
     footer {
+      text-align: center;
       margin-top: 4rem;
       font-size: 0.9rem;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Unicorn Dreams</h1>
+    <h1>Licornes Rent</h1>
     <p class="tagline">Offrez de la magie à vos événements ✨🦄</p>
   </header>
 
-  <div class="hero">
-    <img src="https://i.imgur.com/JZ5b1BR.png" alt="Licorne magique">
-    <p>Anniversaires, mariages, festivals, soirées d’entreprise — nos licornes enchantées feront briller les yeux des petits et grands !</p>
-  </div>
+  <nav>
+    <a href="#about">Qui sommes-nous ?</a>
+    <a href="#services">Nos services</a>
+    <a href="#contact">Nous contacter</a>
+  </nav>
 
-  <div class="cta">
-    <a href="#reservation">Réservez votre licorne maintenant</a>
-  </div>
+  <section id="about">
+    <h2>Qui sommes-nous ?</h2>
+    <p>
+      Chez <strong>Licornes Rent</strong>, nous croyons que chaque événement mérite une touche de magie. 
+      Créée par des passionnés de contes féeriques et d'événements inoubliables, notre entreprise vous propose 
+      de vivre une expérience unique en louant de véritables licornes enchantées pour vos moments les plus précieux.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Nos services</h2>
+    <p>Nous proposons plusieurs prestations féeriques, selon vos envies :</p>
+    <ul>
+      <li><strong>Mariages</strong> : Faites une arrivée magique avec une licorne blanche et dorée, accompagnée de musique céleste.</li>
+      <li><strong>Anniversaires</strong> : Pour enfants ou adultes, nos licornes sont les invitées surprises préférées !</li>
+      <li><strong>Baptêmes</strong> : Une touche de douceur céleste pour ce moment précieux en famille.</li>
+      <li><strong>Soirées d’entreprise</strong> : Ajoutez un peu de fun et d’enchantement à vos événements pro.</li>
+      <li><strong>Festivals & événements publics</strong> : Nos licornes attirent les foules et créent des souvenirs inoubliables.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Nous contacter</h2>
+    <p>Besoin d’un devis, d’informations ou de réserver votre licorne ? Écrivez-nous ci-dessous :</p>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre adresse email" required>
+      <textarea rows="5" placeholder="Votre message magique..." required></textarea>
+      <button type="submit">Envoyer ✨</button>
+    </form>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Unicorn Dreams. Magiquement vôtre.</p>
+    <p>&copy; 2025 Licornes Rent. Fait avec magie et amour.</p>
   </footer>
+
 </body>
 </html>
